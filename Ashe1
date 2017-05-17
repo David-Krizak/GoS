@@ -30,6 +30,11 @@ AsheMenu.Combo:MenuElement({id = "UseQ", name = "Use Q", value = true})
 AsheMenu.Combo:MenuElement({id = "UseW", name = "Use W", value = true})
 AsheMenu.Combo:MenuElement({id = "UseR", name = "Use R", value = true})
 
+AsheMenu:MenuElement({type = MENU, id = "Drawings", name = "Drawings"})
+AsheMenu.Drawings:MenuElement({id = "W", name = "draw w", value = true})
+AsheMenu.Drawings:MenuElement({id = "Width", name = "Width", value = 2,min = 1,max = 5,step = 1})
+AsheMenu.Drawings:MenuElement({id = "Color", name = "Color ", Draw.Color(255,0,0,255)})
+
 
 --checks for valid target
 function IsValidTarget(unit, range, checkTeam, from)
