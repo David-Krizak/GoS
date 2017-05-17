@@ -22,6 +22,7 @@ R = {Delay = 0.35, Radius = 10, Range =99999, Speed = math.hug
 
 
 local Ts = TargetSelector
+Callback.Add("Draw", function() Draw() end)
 local _prediction = Prediction
 local AsheMenu = MenuElement({type = MENU, id = "AsheMenu", name = "Ashe", leftIcon = "http://ddragon.leagueoflegends.com/cdn/6.1.1/img/champion/Ashe.png"})
 --menu
@@ -89,3 +90,13 @@ local target = EOW:GetTarget()
  end 
 Callback.Add("Tick", Combo);
 Callback.Add("Draw", Draw);
+function Draw()
+if myHero.dead then return 
+end
+function Draw()
+if (Ashemenu:Value()) then 
+  Draw.Circle(myHero.pos, 1200, self.Menu.Ashemenu.Drawings.Width:Value(), self.Menu.Ashemenu.Drawings.Color:Value())
+end
+end
+
+Callback.Add("Draw", Draw)
