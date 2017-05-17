@@ -71,7 +71,7 @@ local target = EOW:GetTarget()
     Control.CastSpell(HK_Q)
     end
     
-    if IsValidTarget(target,2) and Game.CanUseSpell(_W) and IsReady(_W) and AsheMenu.Combo.UseW:Value()then
+    if IsValidTarget(target,1200) and Game.CanUseSpell(_W) and IsReady(_W) and AsheMenu.Combo.UseW:Value()then
 			local Prediction = target:GetPrediction(Q.Speed, Q.Delay)
 			Control.CastSpell(HK_W, Prediction)
      end
