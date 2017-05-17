@@ -88,4 +88,4 @@ local target = EOW:GetTarget()
  end
  end 
 Callback.Add("Tick", Combo);
-Callback.Add("Draw", Draw());
+Callback.Add("Draw", Draw);
