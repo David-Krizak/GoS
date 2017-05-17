@@ -67,21 +67,19 @@ end
 function Combo()
 local target = EOW:GetTarget()
   if EOW:Mode() == "Combo" then
-  if target and Game.CanUseSpell(_Q)and IsReady(_Q)and AsheMenu.Combo.UseQ:Value() then
+  if IsValidTarget(target,600) and Game.CanUseSpell(_Q)and IsReady(_Q)and AsheMenu.Combo.UseQ:Value() then
     Control.CastSpell(HK_Q)
     end
     
-    if target and Game.CanUseSpell(_W) and IsReady(_W) and AsheMenu.Combo.UseW:Value()then
+    if IsValidTarget(target,2) and Game.CanUseSpell(_W) and IsReady(_W) and AsheMenu.Combo.UseW:Value()then
 			local Prediction = target:GetPrediction(Q.Speed, Q.Delay)
 			Control.CastSpell(HK_W, Prediction)
      end
      
-    if target and Game.CanUseSpell(_R) and IsReady(_R) and AsheMenu.Combo.UseR:Value()then
+    if IsValidTarget(target,1000) and Game.CanUseSpell(_R) and IsReady(_R) and AsheMenu.Combo.UseR:Value()then
 			local Prediction = target:GetPrediction(R.Speed, R.Delay)
 			Control.CastSpell(HK_R, Prediction)
      end
  end
  end 
 Callback.Add("Tick", Combo);
-
-
