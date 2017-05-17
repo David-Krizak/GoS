@@ -23,7 +23,7 @@ R = {Delay = 0.35, Radius = 10, Range =99999, Speed = math.hug
 
 local Ts = TargetSelector
 local _prediction = Prediction
-local AnnieMenu = MenuElement({type = MENU, id = "AsheMenu", name = "Ashe", leftIcon = "http://ddragon.leagueoflegends.com/cdn/6.1.1/img/champion/Ashe.png"})
+local AsheMenu = MenuElement({type = MENU, id = "AsheMenu", name = "Ashe", leftIcon = "http://ddragon.leagueoflegends.com/cdn/6.1.1/img/champion/Ashe.png"})
 --menu
 AsheMenu:MenuElement({type = MENU, id = "Combo", name = "Combo Settings"})
 AsheMenu.Combo:MenuElement({id = "UseQ", name = "Use Q", value = true})
