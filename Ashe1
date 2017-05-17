@@ -17,11 +17,7 @@ PrintChat("My first Addon :3 ")
 
 Q = {Delay = 0, Radius = 0, Range = 600, Speed = math.huge}
 W = {Delay = 0, Radius = 180, Range = 1200, Speed = math.huge}
-R = {Delay = 0, Radius = 10, Range =99999, Speed = math.huge}
-
-local PASSIVE_AMMO_MAX = myHero.hudMaxAmmo
-local currentAmmo = myHero.hudAmmo
-IsPassiveReady = false
+R = {Delay = 0, Radius = 10, Range =99999, Speed = math.hug
 
 
 local Ts = TargetSelector
@@ -66,16 +62,11 @@ function GetBuffs(unit)
     return T
 end
 
-function CheckForPassiveBuff()
-        if currentAmmo < PASSIVE_AMMO_MAX then
-            IsPassiveReady = false
-        elseif currentAmmo == PASSIVE_AMMO_MAX then
-        end
 
 function Combo()
 local target = EOW:GetTarget()
   if EOW:Mode() == "Combo" then
-  if target and Game.CanUseSpell(_Q)and IsReady(_Q)and IsPassiveReady =true and AsheMenu.Combo.UseQ:Value() then
+  if target and Game.CanUseSpell(_Q)and IsReady(_Q)and AsheMenu.Combo.UseQ:Value() then
     Control.CastSpell(HK_Q,target)
     end
     
