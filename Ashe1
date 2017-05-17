@@ -67,7 +67,7 @@ function Combo()
 local target = EOW:GetTarget()
   if EOW:Mode() == "Combo" then
   if target and Game.CanUseSpell(_Q)and IsReady(_Q)and AsheMenu.Combo.UseQ:Value() then
-    Control.CastSpell(HK_Q,target)
+    Control.CastSpell(HK_Q)
     end
     
     if target and Game.CanUseSpell(_W) and IsReady(_W) and AsheMenu.Combo.UseW:Value()then
