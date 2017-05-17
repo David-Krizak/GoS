@@ -17,7 +17,7 @@ PrintChat("My first Addon :3 ")
 
 Q = {Delay = 0, Radius = 0, Range = 600, Speed = math.huge}
 W = {Delay = 0, Radius = 180, Range = 1200, Speed = math.huge}
-R = {Delay = 0, Radius = 10, Range =99999, Speed = math.hug
+R = {Delay = 0.35, Radius = 10, Range =99999, Speed = math.hug
 
 
 local Ts = TargetSelector
