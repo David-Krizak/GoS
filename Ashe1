@@ -14,6 +14,7 @@ else
   return
 end 
 PrintChat("My first Addon :3 ")
+PrintChat("Thank you Romanov for helping me <3")
 
 Q = {Delay = 0, Radius = 0, Range = 600, Speed = math.huge}
 W = {Delay = 0, Radius = 180, Range = 1200, Speed = math.huge}
