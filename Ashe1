@@ -18,7 +18,7 @@ PrintChat("Thank you Romanov for helping me <3")
 
 Q = {Delay = 0, Radius = 0, Range = 600, Speed = math.huge}
 W = {Delay = 0, Radius = 180, Range = 1200, Speed = math.huge}
-R = {Delay = 0.35, Radius = 10, Range =99999, Speed = math.hug
+R = {Delay = 0.35, Radius = 10, Range =99999, Speed = math.huge}
 
 
 local Ts = TargetSelector
@@ -98,5 +98,3 @@ if (Ashemenu:Value()) then
   Draw.Circle(myHero.pos, 1200, self.Menu.Ashemenu.Drawings.Width:Value(), self.Menu.Ashemenu.Drawings.Color:Value())
 end
 end
-
-Callback.Add("Draw", Draw)
