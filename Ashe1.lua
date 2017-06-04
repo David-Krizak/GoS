@@ -90,7 +90,7 @@ local target = EOW:GetTarget()
  end 
 Callback.Add("Tick", Combo);
 Callback.Add("Draw", Draw);
-function Draw()
+function Draw();
 if myHero.dead then return 
 end
 function Draw()
