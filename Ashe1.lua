@@ -93,7 +93,8 @@ Callback.Add("Draw", Draw);
 function Draw();
 if myHero.dead then return 
 end
-function Draw()
+end
+function Draw();
 if (Ashemenu:Value()) then 
   Draw.Circle(myHero.pos, 1200, self.Menu.Ashemenu.Drawings.Width:Value(), self.Menu.Ashemenu.Drawings.Color:Value())
 end
