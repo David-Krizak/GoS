@@ -15,10 +15,6 @@ Callback.Add("Draw", function() self:Draw() end)
 end
 
 
-local Icon = {
-["icon"] = ""https://puu.sh/tq0A8/5b42557aa9.png"",
-}
-
 function Mundo1.LoadSpells()
 
 	Q = { range = myHero:GetSpellData(_Q).range, delay = myHero:GetSpellData(_Q).delay, speed = myHero:GetSpellData(_Q).speed, width = myHero:GetSpellData(_Q).width }
@@ -31,7 +27,7 @@ function Mundo1:LoadMenu()
 
 --Main Menu
 
-	self.Menu = MenuElement({type = MENU, id = "Mundo1", name = "Mundo1", leftIcon = Icons["icon"]})
+	self.Menu = MenuElement({type = MENU, id = "Mundo1", name = "Mundo1", leftIcon="https://puu.sh/tq0A8/5b42557aa9.png"})
 
 --Combo Settings Menu
 
